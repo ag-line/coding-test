@@ -1,3 +1,3 @@
 # coding-test
-coding test in the programers site
-is the just practice and review
+coding test is using java script language in the programers site 
+this is the just practice and review
