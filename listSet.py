@@ -14,19 +14,20 @@ my_string은 대문자, 소문자, 공백으로 구성되어 있습니다.
 from collections import OrderedDict
 
 def solution1(my_string):
-    str = list(OrderedDict.fromkeys(my_string))
-    str = "".join(str)
-    return(str)
+  #순서 유지를 위함
+  str = list(OrderedDict.fromkeys(my_string))
+  str = "".join(str)
+  return(str)
 
 print(solution1("people"))
 print(solution1("We are the world"))
 
 def solution2(my_string):
-    answer = ''
-    for i in my_string:
-        if i not in answer:
-            answer+=i
-    return answer
+  answer = ''
+  for i in my_string:
+      if i not in answer:
+          answer+=i
+  return answer
 
 print(solution2("people"))
 print(solution2("We are the world"))
